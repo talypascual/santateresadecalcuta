@@ -340,6 +340,147 @@
         }
     </style>
 </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas Importantes - Comunidad Santa Teresa de Calcuta</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #60a5fa;
+            --background-color: #f0f9ff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 15px;
+        }
+
+        .dates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .month-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .month-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .month-card h3 {
+            color: var(--primary-color);
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            font-size: 1.3em;
+        }
+
+        .date-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .date-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Estilos para cumpleaños */
+        .birthday-name {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+
+        .birthday-date {
+            color: #000000;
+            min-width: 100px;
+            text-align: right;
+        }
+
+        /* Estilos para fechas católicas */
+        .catholic-date {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        .catholic-date .event-name {
+            color: #000000;
+            font-weight: normal;
+        }
+
+        .catholic-date .event-date {
+            color: #000000;
+            font-weight: normal;
+            min-width: 100px;
+            text-align: right;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .footer .credit {
+            color: var(--primary-color);
+            margin: 5px 0;
+        }
+
+        .footer .copyright {
+            color: var(--secondary-color);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .dates-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 <body>
     <h1>Fechas Importantes 2025</h1>
 
@@ -351,8 +492,8 @@
                 <span class="event-date">1 Enero</span>
             </div>
             <div class="date-item">
-                <span class="event-name">SANDRA CACERES</span>
-                <span class="event-date">4 Enero</span>
+                <span class="birthday-name">SANDRA CACERES</span>
+                <span class="birthday-date">4 Enero</span>
             </div>
             <div class="date-item catholic-date">
                 <span class="event-name">Epifanía del Señor</span>
@@ -361,11 +502,15 @@
         </div>
 
         <div class="month-card">
-            <h3>Febrero - Marzo</h3>
+            <h3>Febrero</h3>
             <div class="date-item">
-                <span class="event-name">CARMEN ELENA DELGADO</span>
-                <span class="event-date">27 Febrero</span>
+                <span class="birthday-name">CARMEN ELENA DELGADO</span>
+                <span class="birthday-date">27 Febrero</span>
             </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Marzo</h3>
             <div class="date-item catholic-date">
                 <span class="event-name">Miércoles de Ceniza</span>
                 <span class="event-date">5 Marzo</span>
@@ -375,8 +520,8 @@
                 <span class="event-date">19 Marzo</span>
             </div>
             <div class="date-item">
-                <span class="event-name">SOCORRO CARTER (SOKY)</span>
-                <span class="event-date">20 Marzo</span>
+                <span class="birthday-name">SOCORRO CARTER (SOKY)</span>
+                <span class="birthday-date">20 Marzo</span>
             </div>
         </div>
 
@@ -392,7 +537,113 @@
             </div>
         </div>
 
-        <!-- Continúa con el mismo patrón para los demás meses -->
+        <div class="month-card">
+            <h3>Mayo</h3>
+            <div class="date-item">
+                <span class="birthday-name">MONSEÑOR RICARDO TOBON</span>
+                <span class="birthday-date">8 Mayo</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Junio</h3>
+            <div class="date-item catholic-date">
+                <span class="event-name">Domingo de Pentecostés</span>
+                <span class="event-date">15 Junio</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">MILDRED MENDEZ</span>
+                <span class="birthday-date">16 Junio</span>
+            </div>
+            <div class="date-item catholic-date">
+                <span class="event-name">Corpus Christi</span>
+                <span class="event-date">19 Junio</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Julio</h3>
+            <div class="date-item">
+                <span class="birthday-name">BEATRIZ MARTINEZ</span>
+                <span class="birthday-date">28 Julio</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Agosto</h3>
+            <div class="date-item">
+                <span class="birthday-name">GLADYS GIL</span>
+                <span class="birthday-date">5 Agosto</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">FRANCISCO JOSE GIL (PACHO)</span>
+                <span class="birthday-date">6 Agosto</span>
+            </div>
+            <div class="date-item catholic-date">
+                <span class="event-name">Asunción de la Virgen María</span>
+                <span class="event-date">15 Agosto</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">PILAR PINEDA</span>
+                <span class="birthday-date">25 Agosto</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">CARMENZA FAJARDO</span>
+                <span class="birthday-date">28 Agosto</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Septiembre</h3>
+            <div class="date-item">
+                <span class="birthday-name">GERMAN OCAMPO</span>
+                <span class="birthday-date">19 Septiembre</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">MAURICIO QUINTERO</span>
+                <span class="birthday-date">20 Septiembre</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">MIRIAM COBO</span>
+                <span class="birthday-date">28 Septiembre</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Noviembre</h3>
+            <div class="date-item catholic-date">
+                <span class="event-name">Día de Todos los Santos</span>
+                <span class="event-date">1 Noviembre</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">JOE MARTINEZ</span>
+                <span class="birthday-date">19 Noviembre</span>
+            </div>
+            <div class="date-item catholic-date">
+                <span class="event-name">Primer Domingo de Adviento</span>
+                <span class="event-date">30 Noviembre</span>
+            </div>
+        </div>
+
+        <div class="month-card">
+            <h3>Diciembre</h3>
+            <div class="date-item">
+                <span class="birthday-name">ROCIO OCAMPO</span>
+                <span class="birthday-date">3 Diciembre</span>
+            </div>
+            <div class="date-item catholic-date">
+                <span class="event-name">Inmaculada Concepción</span>
+                <span class="event-date">8 Diciembre</span>
+            </div>
+            <div class="date-item">
+                <span class="birthday-name">PILAR JARAMILLO</span>
+                <span class="birthday-date">8 Diciembre</span>
+            </div>
+            <div class="date-item catholic-date">
+                <span class="event-name">Navidad</span>
+                <span class="event-date">25 Diciembre</span>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -400,6 +651,7 @@
         <p class="copyright">© 2025 All rights reserved</p>
     </div>
 </body>
+</html>
 </html>
 <div class="footer">
     <p class="credit">Design and Development: Carmenza Fajardo / Mario Arbelaez</p>
