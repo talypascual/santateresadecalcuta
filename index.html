@@ -6,122 +6,154 @@
     <title>Comunidad Santa Teresa de Calcuta</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            font-size: 18px;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-        main {
-            padding: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             max-width: 800px;
-            margin: auto;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
         }
+
         h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
             font-size: 2em;
-            margin: 0;
-            padding: 0 1rem;
         }
+
         h2 {
-            font-size: 1.6em;
-            color: #444;
-            margin-top: 1.5em;
-            text-align: center;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
         }
-        h3 {
-            font-size: 1.3em;
-            color: #444;
-            text-align: center;
-        }
-        p, li {
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin-bottom: 1em;
-        }
-        ul {
-            padding-left: 1.5em;
-            margin-bottom: 1.5em;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem 1rem;
-            background-color: #333;
-            color: #fff;
-        }
-        .oracion {
-            margin: 2em 0;
-            padding: 1em;
-            background-color: #f8f8f8;
+
+        .prayer {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
             border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .mysteries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .mystery-group {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .mystery-group h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .mystery-group ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .mystery-group li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .mystery-group li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        .birthdays {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .birthdays ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .birthdays li {
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+
+        .birthdays strong {
+            color: #2c3e50;
+            margin-left: 8px;
+        }
+
         @media (max-width: 600px) {
             body {
-                font-size: 20px;
+                padding: 15px;
             }
-            main {
-                padding: 1rem;
-            }
+
             h1 {
                 font-size: 1.8em;
             }
+
             h2 {
-                font-size: 1.4em;
+                font-size: 1.3em;
             }
-            h3 {
-                font-size: 1.2em;
+
+            .prayer {
+                padding: 15px;
             }
-            ul {
-                padding-left: 1.2em;
+
+            .birthdays ul {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Comunidad Santa Teresa de Calcuta</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Invocación al Espíritu Santo</h2>
-            <p>Ven Espíritu Santo llena los corazones de tus fieles y enciende en ellos el fuego de amor. Envía Señor tu Espíritu para darnos nueva vida y se renovará la faz de la Tierra. Oh Dios que iluminaste los corazones de tus fieles con las luces de tu Espíritu Santo, concédenos saborear las cosas rectas según este tu espíritu, y gozar para siempre de tus consolaciones. Por Jesucristo Nuestro Señor, Amén</p>
-        </section>
+    <h1>COMUNIDAD SANTA TERESA DE CALCUTA</h1>
 
-        <section>
-            <h2>Peticiones Especiales Antes del Rosario</h2>
-            <p>Aquí expresamos todos nuestros agradecimientos y peticiones.</p>
-        </section>
+    <div class="prayer">
+        <h2>INVOCACIÓN AL ESPÍRITU SANTO</h2>
+        <p>Ven Espíritu Santo llena los corazones de tus fieles y enciende en ellos el fuego de tu amor. Envía Señor tu Espíritu para darnos nueva vida y se renovará la faz de la Tierra. Oh Dios, que iluminaste los corazones de tus fieles con las luces de tu Espíritu Santo, concédenos saborear las cosas rectas según este tu espíritu y gozar para siempre de tus consolaciones. Por Jesucristo Nuestro Señor, Amén</p>
+    </div>
 
-        <section>
-            <h2>Credo</h2>
-            <p>Creo en Dios Padre todopoderoso, creador del cielo y de la tierra. Creo en Jesucristo, su único Hijo, nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María Virgen, padeció bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado, descendió a los infiernos, al tercer día resucitó de entre los muertos, subió a los cielos y está sentado a la derecha de Dios Padre todopoderoso. Desde allí ha de venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna Amén.</p>
-        </section>
+    <div class="prayer">
+        <h2>CREDO</h2>
+        <p>Creo en Dios Padre todopoderoso, creador del cielo y de la tierra. Creo en Jesucristo, su único Hijo, nuestro Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María Virgen, padeció bajo el poder de Poncio Pilato, fue crucificado, muerto y sepultado, descendió a los infiernos, al tercer día resucitó de entre los muertos, subió a los cielos y está sentado a la derecha de Dios Padre todopoderoso. Desde allí ha de venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de los santos, el perdón de los pecados, la resurrección de la carne y la vida eterna Amén.</p>
+    </div>
 
-        <section>
-            <h2>Rosario a la Virgen María</h2>
-            
-            <h3>Lunes y Sábados: Misterios Gozosos</h3>
+    <h2>ROSARIO A LA VIRGEN MARÍA</h2>
+    <div class="mysteries">
+        <div class="mystery-group">
+            <h3>Lunes y Sábados - MISTERIOS GOZOSOS</h3>
             <ul>
                 <li>La anunciación</li>
-                <li>La Visita de María y Santa Isabel</li>
+                <li>La Visita de María a Santa Isabel</li>
                 <li>El nacimiento de Jesús</li>
                 <li>La presentación de Jesús en el templo</li>
                 <li>El Niño Jesús es hallado</li>
             </ul>
+        </div>
 
-            <h3>Martes y Viernes: Misterios Dolorosos</h3>
+        <div class="mystery-group">
+            <h3>Martes y Viernes - MISTERIOS DOLOROSOS</h3>
             <ul>
                 <li>La oración en el huerto</li>
                 <li>La flagelación de Jesús</li>
@@ -129,8 +161,10 @@
                 <li>Jesús camino al calvario</li>
                 <li>Jesús muere en la cruz</li>
             </ul>
+        </div>
 
-            <h3>Miércoles y Domingos: Misterios Gloriosos</h3>
+        <div class="mystery-group">
+            <h3>Miércoles y Domingos - MISTERIOS GLORIOSOS</h3>
             <ul>
                 <li>La resurrección de Jesús</li>
                 <li>La ascensión de Jesús</li>
@@ -138,8 +172,10 @@
                 <li>La asunción de María</li>
                 <li>La coronación de María</li>
             </ul>
+        </div>
 
-            <h3>Jueves: Misterios Luminosos</h3>
+        <div class="mystery-group">
+            <h3>Jueves - MISTERIOS LUMINOSOS</h3>
             <ul>
                 <li>El Bautismo de Jesús</li>
                 <li>Las bodas de Caná</li>
@@ -147,99 +183,69 @@
                 <li>La Transfiguración de Jesús</li>
                 <li>La Institución de la Eucaristía</li>
             </ul>
-        </section>
+        </div>
+    </div>
 
-        <section>
-            <h2>Salve</h2>
-            <p>Dios te salve Reina y Madre, Madre de Misericordia, vida, dulzura y esperanza nuestra. Dios te salve, a Ti clamamos los desterrados hijos de Eva, a Ti suspiramos, gimiendo y llorando en este Valle de lágrimas. Ea pues Señora abogada nuestra, vuelve a nosotros, esos tus ojos misericordiosos y después de este destierro, muéstranos a Jesús, el fruto de tu vientre, Oh clemente, Oh piadosa, Oh dulce siempre Virgen María. Ruega por nosotros Santa Madre de Dios para que seamos dignos de alcanzar las promesas y gracias de nuestro Señor Jesucristo, Amén.</p>
-        </section>
+    <div class="prayer">
+        <h2>SALVE</h2>
+        <p>Dios te salve Reina y Madre, Madre de Misericordia, vida, dulzura y esperanza nuestra. Dios te salve, a Ti clamamos los desterrados hijos de Eva, a Ti suspiramos, gimiendo y llorando en este Valle de lágrimas. Ea pues Señora abogada nuestra, vuelve a nosotros, esos tus ojos misericordiosos y después de este destierro, muéstranos a Jesús, el fruto de tu vientre, Oh clemente, Oh piadosa, Oh dulce siempre Virgen María. Ruega por nosotros Santa Madre de Dios para que seamos dignos de alcanzar las promesas y gracias de nuestro Señor Jesucristo, Amén.</p>
+    </div>
 
-        <section>
-            <h2>Evangelio del Siguiente Domingo y Lectio Divina</h2>
-        </section>
+    <div class="prayer">
+        <h2>PADRE NUESTRO</h2>
+        <p>Padre nuestro que estás en el cielo, santificado sea tu nombre, venga a nosotros tu reino, hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día, perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación y líbranos del mal, amén.</p>
+    </div>
 
-        <section>
-            <h2>Oración para Cerrar la Lectio Divina</h2>
-        </section>
+    <div class="prayer">
+        <h2>ORACIÓN A SAN MIGUEL ARCÁNGEL</h2>
+        <p>San Miguel Arcángel, defiéndenos en la pelea, sé nuestro amparo contra la maldad y acechanzas del demonio, reprímele Tú Dios te pedimos suplicantes y Tú príncipe de la milicia celestial, armado del poder divino, arroja con ese inmenso poder, a satanás y a todos los espíritus malignos que andan por el mundo para la perdición de las almas, Amén.</p>
+    </div>
 
-        <section>
-            <h2>Peticiones y Acciones de Gracias al Señor</h2>
-            <div class="oracion">
-                <h3>Oración</h3>
-                <p>Acoge Padre todas estas oraciones que te dirigimos en nuestras necesidades, escucha también aquellas que se quedan en nuestros corazón y no nos atrevemos a decir. Escucha también nuestros agradecimientos por todo lo que nos ofreces, aun sin pedirlo.</p>
-            </div>
-        </section>
+    <div class="prayer">
+        <h2>ORACIÓN A SAN FRANCISCO DE ASÍS</h2>
+        <p>Señor, haz de nosotros instrumentos de tu paz<br>
+        Donde haya odio, sembremos amor<br>
+        Donde haya injuria, perdón<br>
+        Donde haya duda fe<br>
+        Donde haya desesperación, esperanza<br>
+        Donde haya oscuridad, luz<br>
+        Donde haya tristeza, alegría<br><br>
+        Oh Divino maestro, concédenos que no busquemos<br>
+        Ser consolados, sino consolar<br>
+        Que no busquemos ser comprendidos<br>
+        Sino comprender<br>
+        Que no busquemos ser amados<br>
+        Sino amar<br><br>
+        Por que dando es como recibimos<br>
+        Perdonando es como Tú nos perdonas<br>
+        Y muriendo en Ti nacemos para la vida eterna. Amén.</p>
+    </div>
 
-        <section>
-            <h2>Padre Nuestro</h2>
-            <p>Padre nuestro que estás en el cielo, santificado sea tu nombre, venga a nosotros tu reino, hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día, perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación y líbranos del mal, amén.</p>
-        </section>
+    <div class="prayer">
+        <h2>ORACIÓN FINAL A LA VIRGEN MARÍA</h2>
+        <p>Dulce Madre no te alejes, tu vista de nosotros no apartes, ven con nosotros a todas partes y solos nunca nos dejes, y ya que nos quieres tanto como verdadera Madre, haz que en esta noche, nos bendiga, EL PADRE, EL HIJO Y EL ESPÍRITU SANTO AMÉN.</p>
+    </div>
 
-        <section>
-            <h2>Oración a María</h2>
-            <p>Bajo tu amparo nos acogemos Santa Madre de Dios, no desprecies las súplicas que te dirigimos en nuestras necesidades, antes bien, líbranos de todo mal y peligro oh Virgen Gloriosa y Bendita, Amén.</p>
-        </section>
-
-        <section class="oracion">
-            <p>SAGRADO CORAZÓN DE JESÚS En vos confío</p>
-            <p>SAN JOSÉ VARÓN PRUDENTE Y JUSTO Ruega por nosotros</p>
-            <p>SANTA TERESA DE CALCUTA Ruega por nosotros</p>
-        </section>
-
-        <section>
-            <h2>Oración a San Miguel Arcángel</h2>
-            <p>San Miguel Arcángel, defiéndenos en la pelea, sé nuestro amparo contra la maldad y acechanzas del demonio, reprímele Tú Dios te pedimos suplicantes y Tú príncipe de la milicia celestial, armado del poder divino, arroja con ese inmenso poder, a satanás y a todos los espíritus malignos que andan por el mundo para la perdición de las almas, Amén.</p>
-        </section>
-
-        <section>
-            <h2>Oración a San Francisco de Asís</h2>
-            <p>Señor, haz de nosotros instrumentos de tu paz<br>
-            Donde haya odio, sembremos amor<br>
-            Donde haya injuria, perdón<br>
-            Donde haya duda fe<br>
-            Donde haya desesperación, esperanza<br>
-            Donde haya oscuridad, luz<br>
-            Donde haya tristeza, alegría<br>
-            Oh Divino maestro, concédenos que no busquemos<br>
-            Ser consolados, sino consolar<br>
-            Que no busquemos ser comprendidos<br>
-            Sino comprender<br>
-            Que no busquemos ser amados<br>
-            Sino amar<br>
-            Por que dando es como recibimos<br>
-            Perdonando es como Tú nos perdonas<br>
-            Y muriendo en Ti nacemos para la vida eterna. Amén.</p>
-        </section>
-
-        <section>
-            <h2>Oración Final a la Virgen María</h2>
-            <p>Dulce Madre no te alejes, tu vista de nosotros no apartes, ven con nosotros a todas partes y solos nunca nos dejes, y ya que nos quieres tanto como verdadera Madre, haz que en esta noche, nos bendiga, EL PADRE, EL HIJO Y EL ESPÍRITU SANTO AMÉN.</p>
-        </section>
-
-        <section>
-            <h2>Cumpleaños</h2>
-            <ul>
-                <li>Sandra Cáceres - Enero 4</li>
-                <li>Carmen Elena Delgado - Febrero 27</li>
-                <li>Socorro Carter (Soky) - Marzo 20</li>
-                <li>Monseñor Ricardo Tobón - Mayo 8</li>
-                <li>Mildred Méndez - Junio 16</li>
-                <li>Beatriz Martínez - Julio 28</li>
-                <li>Gladys Gil - Agosto 5</li>
-                <li>Francisco José Gil (Pacho) - Agosto 6</li>
-                <li>Pilar Pineda - Agosto 25</li>
-                <li>Carmenza Fajardo - Agosto 28</li>
-                <li>Germán Ocampo - Septiembre 19</li>
-                <li>Mauricio Quintero - Septiembre 20</li>
-                <li>Miriam Cobo - Septiembre 28</li>
-                <li>Joe Martínez - Noviembre 19</li>
-                <li>Rocío Ocampo - Diciembre 3</li>
-                <li>Pilar Jaramillo - Diciembre 8</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Comunidad Santa Teresa de Calcuta</p>
-    </footer>
+    <div class="birthdays">
+        <h2>CUMPLEAÑOS</h2>
+        <ul>
+            <li>SANDRA CACERES <strong>ENERO 4</strong></li>
+            <li>CARMEN ELENA DELGADO <strong>FEBRERO 27</strong></li>
+            <li>SOCORRO CARTER (SOKY) <strong>MARZO 20</strong></li>
+            <li>MONSEÑOR RICARDO TOBON <strong>MAYO 8</strong></li>
+            <li>MILDRED MENDEZ <strong>JUNIO 16</strong></li>
+            <li>BEATRIZ MARTINEZ <strong>JULIO 28</strong></li>
+            <li>GLADYS GIL <strong>AGOSTO 5</strong></li>
+            <li>FRANCISCO JOSE GIL (PACHO) <strong>AGOSTO 6</strong></li>
+            <li>PILAR PINEDA <strong>AGOSTO 25</strong></li>
+            <li>CARMENZA FAJARDO <strong>AGOSTO 28</strong></li>
+            <li>GERMAN OCAMPO <strong>SEPTIEMBRE 19</strong></li>
+            <li>MAURICIO QUINTERO <strong>SEPTIEMBRE 20</strong></li>
+            <li>MIRIAM COBO <strong>SEPTIEMBRE 28</strong></li>
+            <li>JOE MARTINEZ <strong>NOVIEMBRE 19</strong></li>
+            <li>ROCIO OCAMPO <strong>DICIEMBRE 3</strong></li>
+            <li>PILAR JARAMILLO <strong>DICIEMBRE 8</strong></li>
+        </ul>
+    </div>
 </body>
 </html>
