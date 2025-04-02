@@ -15,10 +15,10 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            max-width: 1200px;
+            line-height: 1.6; /* Slightly reduced line height for better readability */
+            max-width: 1000px; /* Reduced max-width for easier reading on large screens */
             margin: 0 auto;
-            padding: 30px;
+            padding: 20px; /* Reduced padding for better content density */
             background-color: var(--background-color);
             color: var(--text-color);
         }
@@ -26,60 +26,67 @@
         h1 {
             color: var(--primary-color);
             text-align: center;
-            margin: 40px 0;
-            font-size: 2.5em;
+            margin: 30px 0; /* Reduced margin */
+            font-size: 2em; /* Reduced font size */
             text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 3px solid var(--accent-color);
-            padding-bottom: 15px;
+            letter-spacing: 1px; /* Reduced letter spacing */
+            border-bottom: 2px solid var(--accent-color); /* Thinner border */
+            padding-bottom: 10px; /* Reduced padding */
         }
 
         h2 {
             color: var(--primary-color);
-            margin-top: 35px;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-left: 5px solid var(--secondary-color);
-            padding-left: 15px;
+            margin-top: 25px; /* Reduced margin */
+            margin-bottom: 15px; /* Reduced margin */
+            font-size: 1.4em; /* Reduced font size */
+            border-left: 4px solid var(--secondary-color); /* Thinner border */
+            padding-left: 10px; /* Reduced padding */
+        }
+
+        h3 { /* Added styles for H3 */
+            color: var(--primary-color);
+            margin-top: 20px; /* Reduced margin */
+            margin-bottom: 10px; /* Reduced margin */
+            font-size: 1.2em; /* Reduced font size */
         }
 
         .prayer {
             background-color: white;
-            padding: 30px;
-            margin: 25px 0;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px; /* Reduced padding */
+            margin: 15px 0; /* Reduced margin */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .prayer:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .mysteries {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+            gap: 20px; /* Reduced gap */
+            margin: 20px 0; /* Reduced margin */
         }
 
         .mystery-group {
             background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .mystery-group:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .mystery-group h3 {
             color: var(--primary-color);
             margin-top: 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px; /* Reduced padding */
+            border-bottom: 1px solid var(--accent-color); /* Thinner border */
         }
 
         .mystery-group ul {
@@ -88,8 +95,8 @@
         }
 
         .mystery-group li {
-            margin-bottom: 12px;
-            padding-left: 25px;
+            margin-bottom: 8px; /* Reduced margin */
+            padding-left: 20px; /* Reduced padding */
             position: relative;
         }
 
@@ -102,36 +109,36 @@
 
         .dates-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+            gap: 20px; /* Reduced gap */
+            margin-top: 20px; /* Reduced margin */
         }
 
         .month-card {
             background-color: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .month-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .month-card h3 {
             color: var(--primary-color);
-            margin: 0 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
-            font-size: 1.3em;
+            margin: 0 0 15px 0; /* Reduced margin */
+            padding-bottom: 8px; /* Reduced padding */
+            border-bottom: 1px solid var(--accent-color); /* Thinner border */
+            font-size: 1.1em; /* Reduced font size */
         }
 
         .date-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
+            padding: 10px 0; /* Reduced padding */
             border-bottom: 1px solid #e2e8f0;
         }
 
@@ -147,16 +154,16 @@
 
         .birthday-date {
             color: #000000;
-            min-width: 100px;
+            min-width: 80px; /* Reduced min-width */
             text-align: right;
         }
 
         /* Estilos para fechas católicas */
         .catholic-date {
             background-color: #f8fafc;
-            border-radius: 8px;
-            padding: 8px;
-            margin: 8px 0;
+            border-radius: 6px; /* Reduced border-radius */
+            padding: 6px; /* Reduced padding */
+            margin: 6px 0; /* Reduced margin */
         }
 
         .catholic-date .event-name {
@@ -167,44 +174,45 @@
         .catholic-date .event-date {
             color: #000000;
             font-weight: normal;
-            min-width: 100px;
+            min-width: 80px; /* Reduced min-width */
             text-align: right;
         }
 
         .footer {
             text-align: center;
-            margin-top: 60px;
-            padding: 30px;
+            margin-top: 40px; /* Reduced margin */
+            padding: 20px; /* Reduced padding */
             background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
         }
 
         .footer .credit {
             color: var(--primary-color);
-            margin: 5px 0;
+            margin: 3px 0; /* Reduced margin */
+            font-size: 0.9em; /* Reduced font size */
         }
 
         .footer .copyright {
             color: var(--secondary-color);
-            font-size: 0.9em;
+            font-size: 0.8em; /* Reduced font size */
         }
 
         @media (max-width: 768px) {
             body {
-                padding: 15px;
+                padding: 10px; /* Further reduced padding on small screens */
             }
 
             h1 {
-                font-size: 2em;
+                font-size: 1.8em; /* Further reduced font size on small screens */
             }
 
             h2 {
-                font-size: 1.5em;
+                font-size: 1.3em; /* Further reduced font size on small screens */
             }
 
             .prayer, .mystery-group {
-                padding: 20px;
+                padding: 15px; /* Further reduced padding on small screens */
             }
 
             .dates-grid {
@@ -472,70 +480,4 @@
                 <span class="birthday-date">25 Agosto</span>
             </div>
             <div class="date-item">
-                <span class="birthday-name">CARMENZA FAJARDO</span>
-                <span class="birthday-date">28 Agosto</span>
-            </div>
-        </div>
-
-        <!-- Septiembre -->
-        <div class="month-card">
-            <h3>Septiembre</h3>
-             <div class="date-item">
-                <span class="birthday-name">GERMAN OCAMPO</span>
-                <span class="birthday-date">19 Septiembre</span>
-            </div>
-            <div class="date-item">
-                <span class="birthday-name">MAURICIO QUINTERO</span>
-                <span class="birthday-date">20 Septiembre</span>
-            </div>
-            <div class="date-item">
-                <span class="birthday-name">MIRIAM COBO</span>
-                <span class="birthday-date">28 Septiembre</span>
-            </div>
-        </div>
-
-        <!-- Noviembre -->
-        <div class="month-card">
-            <h3>Noviembre</h3>
-            <div class="date-item catholic-date">
-                <span class="event-name">Día de Todos los Santos</span>
-                <span class="event-date">1 Noviembre</span>
-            </div>
-             <div class="date-item">
-                <span class="birthday-name">JOE MARTINEZ</span>
-                <span class="birthday-date">19 Noviembre</span>
-            </div>
-            <div class="date-item catholic-date">
-                <span class="event-name">Primer Domingo de Adviento</span>
-                <span class="event-date">30 Noviembre</span>
-            </div>
-        </div>
-
-        <!-- Diciembre -->
-        <div class="month-card">
-            <h3>Diciembre</h3>
-            <div class="date-item">
-                <span class="birthday-name">ROCIO OCAMPO</span>
-                <span class="birthday-date">3 Diciembre</span>
-            </div>
-            <div class="date-item catholic-date">
-                <span class="event-name">Inmaculada Concepción</span>
-                <span class="event-date">8 Diciembre</span>
-            </div>
-           <div class="date-item">
-                <span class="birthday-name">PILAR JARAMILLO</span>
-                <span class="birthday-date">8 Diciembre</span>
-            </div>
-            <div class="date-item catholic-date">
-                <span class="event-name">Navidad</span>
-                <span class="event-date">25 Diciembre</span>
-            </div>
-        </div>
-    </div>
-
-  <div class="footer">
-        <p class="credit">Design and Development: Carmenza Fajardo / Mario Arbelaez</p>
-        <p class="copyright">© 2025 All rights reserved</p>
-    </div>
-</body>
-</html>
+                <span class="birthday-name">CARMENZA FAJARDO
