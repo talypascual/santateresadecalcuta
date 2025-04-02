@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad Santa Teresa de Calcuta</title>
     <style>
-        /* ------- Updated CSS for Readability and Subtle Enhancements ------- */
-
         :root {
             --primary-color: #1e3a8a;
             --secondary-color: #3b82f6;
             --accent-color: #60a5fa;
             --background-color: #f0f9ff;
-            --text-color: #374151;  /* Darker text color */
+            --text-color: #1e293b;
         }
 
         body {
-            font-family: 'Open Sans', sans-serif; /* More readable font */
-            line-height: 1.7; /* Increased line height for better spacing */
-            max-width: 1050px; /* Slightly wider for more comfortable reading */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6; /* Slightly reduced line height for better readability */
+            max-width: 1000px; /* Reduced max-width for easier reading on large screens */
             margin: 0 auto;
-            padding: 25px; /* Adjusted padding */
+            padding: 20px; /* Reduced padding for better content density */
             background-color: var(--background-color);
             color: var(--text-color);
         }
@@ -28,67 +26,67 @@
         h1 {
             color: var(--primary-color);
             text-align: center;
-            margin: 35px 0 25px; /* Adjusted margins */
-            font-size: 2.3em; /* Slightly larger heading */
+            margin: 30px 0; /* Reduced margin */
+            font-size: 2em; /* Reduced font size */
             text-transform: uppercase;
-            letter-spacing: 1.5px; /* Adjusted letter spacing */
-            border-bottom: 3px solid var(--accent-color);
-            padding-bottom: 12px; /* Adjusted padding */
+            letter-spacing: 1px; /* Reduced letter spacing */
+            border-bottom: 2px solid var(--accent-color); /* Thinner border */
+            padding-bottom: 10px; /* Reduced padding */
         }
 
         h2 {
             color: var(--primary-color);
-            margin-top: 30px; /* Adjusted margins */
-            margin-bottom: 20px;
-            font-size: 1.6em; /* Slightly larger subheading */
-            border-left: 6px solid var(--secondary-color); /* Thicker border */
-            padding-left: 12px; /* Adjusted padding */
+            margin-top: 25px; /* Reduced margin */
+            margin-bottom: 15px; /* Reduced margin */
+            font-size: 1.4em; /* Reduced font size */
+            border-left: 4px solid var(--secondary-color); /* Thinner border */
+            padding-left: 10px; /* Reduced padding */
         }
 
-        h3 {
+        h3 { /* Added styles for H3 */
             color: var(--primary-color);
-            margin-top: 25px; /* Adjusted margins */
-            margin-bottom: 15px;
-            font-size: 1.3em; /* Slightly larger size */
+            margin-top: 20px; /* Reduced margin */
+            margin-bottom: 10px; /* Reduced margin */
+            font-size: 1.2em; /* Reduced font size */
         }
 
         .prayer {
-            background-color: #ffffff; /* Pure white background */
-            padding: 25px; /* Adjusted padding */
-            margin: 20px 0; /* Adjusted margins */
-            border-radius: 12px; /* Adjusted radius */
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+            background-color: white;
+            padding: 20px; /* Reduced padding */
+            margin: 15px 0; /* Reduced margin */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .prayer:hover {
-            transform: translateY(-4px); /* Hover effect adjusted */
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .mysteries {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax */
-            gap: 22px; /* Adjusted gap */
-            margin: 25px 0; /* Adjusted margins */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+            gap: 20px; /* Reduced gap */
+            margin: 20px 0; /* Reduced margin */
         }
 
         .mystery-group {
-            background-color: #ffffff; /* Pure white background */
-            padding: 20px; /* Adjusted padding */
-            border-radius: 12px; /* Adjusted radius */
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+            background-color: white;
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .mystery-group:hover {
-            transform: translateY(-4px); /* Hover effect adjusted */
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .mystery-group h3 {
             color: var(--primary-color);
             margin-top: 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px; /* Reduced padding */
+            border-bottom: 1px solid var(--accent-color); /* Thinner border */
         }
 
         .mystery-group ul {
@@ -97,8 +95,8 @@
         }
 
         .mystery-group li {
-            margin-bottom: 10px;
-            padding-left: 22px;
+            margin-bottom: 8px; /* Reduced margin */
+            padding-left: 20px; /* Reduced padding */
             position: relative;
         }
 
@@ -111,36 +109,36 @@
 
         .dates-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax */
-            gap: 22px; /* Adjusted gap */
-            margin-top: 25px; /* Adjusted margins */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax */
+            gap: 20px; /* Reduced gap */
+            margin-top: 20px; /* Reduced margin */
         }
 
         .month-card {
-            background-color: #ffffff; /* Pure white background */
-            padding: 20px; /* Adjusted padding */
-            border-radius: 12px; /* Adjusted radius */
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+            background-color: white;
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
             transition: transform 0.3s ease;
         }
 
         .month-card:hover {
-            transform: translateY(-4px); /* Hover effect adjusted */
+            transform: translateY(-3px); /* Reduced hover effect */
         }
 
         .month-card h3 {
             color: var(--primary-color);
-            margin: 0 0 18px 0; /* Adjusted margins */
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
-            font-size: 1.2em; /* Slightly larger */
+            margin: 0 0 15px 0; /* Reduced margin */
+            padding-bottom: 8px; /* Reduced padding */
+            border-bottom: 1px solid var(--accent-color); /* Thinner border */
+            font-size: 1.1em; /* Reduced font size */
         }
 
         .date-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
+            padding: 10px 0; /* Reduced padding */
             border-bottom: 1px solid #e2e8f0;
         }
 
@@ -151,80 +149,76 @@
         /* Estilos para cumpleaños */
         .birthday-name {
             color: var(--secondary-color);
-            font-weight: 600; /* Less bold */
+            font-weight: 700;
         }
 
         .birthday-date {
-            color: #4a5568; /* Darker muted color */
-            min-width: 90px; /* Adjusted width */
+            color: #000000;
+            min-width: 80px; /* Reduced min-width */
             text-align: right;
         }
 
         /* Estilos para fechas católicas */
         .catholic-date {
-            background-color: #edf2f7; /* Lighter background */
-            border-radius: 8px;
-            padding: 8px;
-            margin: 8px 0;
+            background-color: #f8fafc;
+            border-radius: 6px; /* Reduced border-radius */
+            padding: 6px; /* Reduced padding */
+            margin: 6px 0; /* Reduced margin */
         }
 
         .catholic-date .event-name {
-            color: #4a5568; /* Darker muted color */
-            font-weight: 500; /* Less bold */
+            color: #000000;
+            font-weight: normal;
         }
 
         .catholic-date .event-date {
-            color: #4a5568; /* Darker muted color */
-            font-weight: 500; /* Less bold */
-            min-width: 90px; /* Adjusted width */
+            color: #000000;
+            font-weight: normal;
+            min-width: 80px; /* Reduced min-width */
             text-align: right;
         }
 
         .footer {
             text-align: center;
-            margin-top: 50px; /* Adjusted margin */
-            padding: 25px; /* Adjusted padding */
-            background-color: #ffffff; /* Pure white background */
-            border-radius: 12px; /* Adjusted radius */
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08); /* Subtler shadow */
+            margin-top: 40px; /* Reduced margin */
+            padding: 20px; /* Reduced padding */
+            background-color: white;
+            border-radius: 10px; /* Slightly smaller border-radius */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow intensity */
         }
 
         .footer .credit {
             color: var(--primary-color);
-            margin: 6px 0; /* Adjusted margins */
-            font-size: 1em; /* Adjusted font size */
+            margin: 3px 0; /* Reduced margin */
+            font-size: 0.9em; /* Reduced font size */
         }
 
         .footer .copyright {
             color: var(--secondary-color);
-            font-size: 0.9em; /* Adjusted font size */
+            font-size: 0.8em; /* Reduced font size */
         }
 
         @media (max-width: 768px) {
             body {
-                padding: 20px; /* Adjusted padding */
+                padding: 10px; /* Further reduced padding on small screens */
             }
 
             h1 {
-                font-size: 2em; /* Adjusted font size */
+                font-size: 1.8em; /* Further reduced font size on small screens */
             }
 
             h2 {
-                font-size: 1.5em; /* Adjusted font size */
+                font-size: 1.3em; /* Further reduced font size on small screens */
             }
 
-            .prayer,
-            .mystery-group {
-                padding: 20px; /* Adjusted padding */
+            .prayer, .mystery-group {
+                padding: 15px; /* Further reduced padding on small screens */
             }
 
             .dates-grid {
                 grid-template-columns: 1fr;
             }
         }
-
-        /* Font Import (Place this OUTSIDE the style tag if using external CSS) */
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
     </style>
 </head>
 <body>
@@ -286,7 +280,8 @@
                 <li>El Bautismos de Jesus</li>
                 <li>Las bodas de Cana</li>
                 <li>El anuncio del Reino de Dios</li>
-                <li>La Transfiguracion de Jesus</li>                <li>La Institucion de la Eucaristia</li>
+                <li>La Transfiguracion de Jesus</li>
+                <li>La Institucion de la Eucaristia</li>
             </ul>
         </div>
     </div>
